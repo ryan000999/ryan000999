@@ -65,3 +65,60 @@ print(float(age))
 
 print(int(True)) # 1
 print(int(False)) # 0
+
+print(bool(None)) # False
+print(bool(1))
+
+# list: [,,,,,]
+int_numbers = [1, 3, 2, -10]
+# friends = ["Bob", 2, "Kenny"] - DO NOT
+print(int_numbers[0])
+print(int_numbers[-1])
+
+# len
+print(len(int_numbers))
+
+# append
+int_numbers.append(100)
+print(int_numbers)
+
+# extend
+int_numbers.extend([10, 100, 1000])
+print(int_numbers)
+
+# remove
+int_numbers.remove(100)
+print(int_numbers)
+
+# remove index - 2
+int_numbers.pop(2)
+print(int_numbers)
+
+# reverse
+int_numbers.reverse()
+print(int_numbers)
+
+# sort
+int_numbers.sort(reverse=True)
+print(int_numbers)
+
+# count
+#      0  1  2  3  4  5  6
+#     -7 -6 -5 -4 -3 -2 -1 
+lst = [1, 2, 1, 1, 3, 4, 2]
+number1s = lst.count(2)
+
+print(number1s)
+
+# index
+idx_3 = lst.index(3)
+print(idx_3)
+print(idx_3 - len(lst))
+
+# reverse by list slicing
+# list slicing => new list # list
+print("origin:", lst)
+new_lst = lst[::-1]
+print("after: ", new_lst)
+
+print(lst[1:-1])
